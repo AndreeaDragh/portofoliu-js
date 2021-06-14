@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data types</title>
+</head>
+<body>
+    <script>
+        let counter = 0;
+        console.log(typeof counter);
+        let counter2 = 154e5;
+        console.log(typeof counter2);
+        let counter3 = 0 / 0;           //asta e valoarea NaN
+        console.log(counter3);
+        console.log(typeof counter3);
+        let counter4 = 5 / 0;           //asta e valoarea Infinity
+        console.log(counter4);
+        console.log(typeof counter4);
+
+        let x = 9999999999999999999999n;        //asta e bigint
+        console.log(x);
+        console.log(typeof x);
+
+        var a = 'text 1';           //asta e string
+        var b = "text 2";
+        console.log(typeof a);
+        console.log(typeof b);
+
+        var c = 5==6;           //asta e boolean
+        console.log(c);
+        console.log(typeof c);
+
+        var d;                  //asta e undefined
+        console.log(d);
+        console.log(typeof d);
+
+        var e = null;           //asta e null
+        console.log(e);            
+        console.log(typeof e);  //la typeof o sa imi apara object (e bug de la javascript)
+
+        const ID = Symbol();    //asta e Symbol
+        console.log(ID);
+        console.log(typeof ID);
+
+      /*  var make = "Honda";     //asta e Object
+        var model = "S2000";
+        var color = "black";
+        var engineDisplacement = 1997; */
+        var car = {make:"Honda", model:"S2000", color:"black", engineDisplacement:1997};
+        console.log(car);
+        console.log(typeof car);
+
+        var f = 42;
+        console.log(typeof f);
+        f = "some text";
+        console.log(typeof f); 
+    </script>
+</body>
+</html>

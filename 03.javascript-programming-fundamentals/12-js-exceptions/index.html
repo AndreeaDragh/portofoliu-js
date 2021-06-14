@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Exceptions</title>
+</head>
+<body>
+    <script>
+//      var b = 13; daca specific variabila, blocul catch nu isi mai produce efectul pentru ca ruleaza codul, dar se va afisa totusi blocul finally
+        try{
+            console.log("Value of variable b is " + b);
+        } catch (err) {
+            console.log("Error name: " + err.name);
+            console.log("Error message: " + err.message); 
+        } finally {
+            console.log("Hello from finally block!:)");
+        }
+        console.log("Hello World!");
+
+ /*       throw "This is Error 666";        emitere individuala a exceptiilor
+        console.log("Hello Hell!"); */
+
+        function divide(a, c) {
+            if (c == 0) {
+                var e = new Error("Division by zero is not allowed");
+                e.name = "Invalid division";
+                throw e;  
+            } else if (c > 1000){
+                throw RangeError("Divider can't be greater then 1000");
+                /* sau merge asa:
+                throw{
+                    name: "Out of range"
+                    message: "Divider can't be greater than 1000"
+                } */
+            }
+            return a / c;
+        }
+        try{
+            divide (5,0);
+        } catch(err){ 
+            console.log("Error name: " + err.name);
+            console.log("Error message: " + err.message);
+        }
+    </script>
+</body>
+</html>

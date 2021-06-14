@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asociative Arrays in JavaScript</title>
+</head>
+<body>
+    <script>
+       /* let arr = [1, 2, 3, 4, 5];          //asta e un sir indexat
+        console.log(arr[1]); */
+
+        var user = {"id":1, "username":'john', "password":'faio3298429', "email":'john@gmail.com'};
+        for(property in user) {
+            console.log(user[property]);
+        }
+
+        let map = new Map([
+            ['id',2],
+            ['username', 'maria'],
+            ['password', '43297ewid'],
+            ['email', 'maria@gmail.com']
+        ]);
+            console.log(map.get('username'));
+            console.log(map.size);
+            console.log(map.has('username'));       //cauta daca are username, da valori in true/false
+            map.delete("password");                 //am sters propietatea
+            console.log(map.has("password"));       //am verificat daca a sters-o
+        for(let [key, value] of map.entries()){     //daca vreau sa fie citite doar cheile, pun in loc de entries, si in interiorul parantezelor dor keys.
+                console.log(key + ": " + value);
+        }    
+        
+        /*let map = new Map();              -->abordare identica ca modelul de mai sus
+        map.set("id", 1);
+        ...
+        ...                             */
+    </script>
+</body>
+</html>

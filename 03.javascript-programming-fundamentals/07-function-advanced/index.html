@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Advanced</title>
+</head>
+<body>
+    <script>
+     /*   var a = 5;
+        var b = 10;
+        function calculateRectArea(a,b) {
+            var c = a * b;
+            a = 30;
+            return c;
+        }
+        var result = calculateRectArea(a,b);
+        console.log("Result is " + result);
+        console.log("a = " + a);                          //nu a afisat 30 asa cum as fi vrut 
+      */
+
+    /*  function calculateRectArea(theObject) {
+        var result = theObject.numberA * theObject.numberB;
+        theObject.numberA = 30;
+        return result;
+      }
+
+      var rectangle = {numberA: 5, numberB: 10};
+      var result = calculateRectArea(rectangle);
+      console.log("Result is " + result);
+      console.log("a = " + rectangle.numberA);             //acum a afisat 30 asa cum am vrut
+    */
+
+
+    /*var x = 4;  //asta e variabila globala
+    function myFunction(){
+        var y = 5;      //asta e variabila locala
+        console.log(x);
+        console.log(y);
+    }
+    myFunction();  //consolele nu ar fi fost vizibile daca nu puneam variabila asta
+                   //daca scot consolele in afara functiei, atunci va fi afisata doar var x = 4
+    */
+
+    function myFunction(x){
+        return x * x;
+    }
+    console.log(myFunction(6)); //si daca pun consola deasupra functiei merge si da 36 pentru ca hoisting
+    </script>
+</body>
+</html>

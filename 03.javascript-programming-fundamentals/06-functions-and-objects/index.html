@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Functions</title>
+</head>
+<body>
+    <script>
+        /*var a = 5;                //folosesc asta doar daca vreau ceva specific
+        var b = 10;
+
+        var rectArea = a * b; */
+
+        function calculateRectArea (a, b) {
+            return a*b;
+        }
+
+        var result = calculateRectArea(5, 10);
+        console.log(result);
+
+        function sayHello(name) {
+            console.log("Hello " + name);
+        }
+        sayHello("Adam");
+
+        function sayHelloWorld() {
+            console.log("Hello World!");
+        }
+        sayHelloWorld();
+
+        function myFunction(...arguments){
+            console.log(arguments);
+        }
+        myFunction (1, 2, 3, 4);
+        myFunction (1, 2, 3);
+
+        console.log("Hello World");         //astea 3 sunt exemplu de functii incorporate
+        document.write("Hello World");
+        let x = parseInt("45");
+        
+    </script>
+</body>
+</html>

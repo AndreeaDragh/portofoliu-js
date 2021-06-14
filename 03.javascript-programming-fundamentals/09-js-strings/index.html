@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Strings</title>
+</head>
+<body>
+    <script>
+        var x = "This is some text";
+        console.log(typeof x);
+
+        var y = 'It\'s alright';    //deci avem asa: \'=', \"=", \\=\, \n=rand nou, \r=intoarcere, \t=tab orizontal
+        console.log(y);
+
+        //pot concatena/uni doua "" prin adunare
+
+        var a = "SOME TEXT";                //din majuscule in minuscule
+        console.log(a.toLowerCase());
+    
+        var b = "some text";
+        console.log(a.toUpperCase());       //din minuscule in majuscule
+
+        var c = "some text";        //length numara cate caractere are literalul (numara si spatiile goale)
+        console.log(c.length);
+
+        var d = "some text"         //charAt imi localizeaza al 6-lea caracter
+        console.log(d.charAt(6));
+
+        var e = "Hello World!"      
+        console.log(e.substring(6));    //imi localizeaza ce se afla de la caracterul 6 pana la sfarsitul stringului
+        console.log(e.substring(0, 5)); //imi localizeaza ce e intre 0 si 5
+
+        var someText = "The indexOf() method returns the position of the first occurrence of a specified value in a string.";
+        console.log(someText.indexOf("method"));    //in afiseaza 14,pentru ca incepe de la caracterul 14
+        console.log(someText.indexOf("methods"));   //daca nu am cuvantul in text, imi da -1
+
+        var f = "      Hello World     ";
+        console.log(f.trim()); //elimina spatiile goale. mai merge si trimStart(doar la inceput), trimEnd (sfarsit)
+    </script>                           
+</body>
+</html>

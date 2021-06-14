@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operatori aritmetici si de atribuire</title>
+</head>
+<body>
+    <script>
+        let x = 5;
+        let y = 10;
+        let z = x + y;      //merge si -,*,/,%=restul impartirii, ++, --
+        console.log(z);
+
+        let o ="Total length in km is " + 365;
+        console.log(o);
+        //merge si concatenarea string-urilor cu number
+
+        let a = 5;
+        let b = 10;
+        a+=b;               //practic calculeaza a=a+b, merge si cu -=, *=, /=, %=
+        console.log(a);
+        console.log(b);
+
+        let c = 45;
+        let d = c++;    //nu da rezultatul bun, pentru ca nu am pus corect. conteaza ordinea. trebuia sa pun ++c.
+        console.log(c);
+        console.log(d);
+    </script>
+</body>
+</html>

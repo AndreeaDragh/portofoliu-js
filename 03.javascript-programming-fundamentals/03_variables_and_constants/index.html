@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables and constants</title>
+</head>
+<body>
+    <script>
+        let counter = 0;
+        counter= 1;
+        counter= 5;
+
+        document.write(counter); //asa va arata ultima valoare precizata in script
+        document.write("Hello World!") //asa pot pune orice valoare textuala pentru ca tot mi-o va afisa.
+        console.log(counter);   //asa e o modalitate care va afisa rezultatul doar in browser in categoria "Console"
+        //Daca vreau sa vad in consola toate valorie 0.1.5 trebuie sa pun codul de mai sus sub toate comenzile de mai sus.
+        //Si daca pun var in loc de let, imi afiseaza acelasi lucru
+        alert(counter); //Imi apare ca un avertisment in momentul in care incarc pagina 
+
+        const COLOR_1 = "#026873";
+     // COLOR_1 = "#026875"; pt ca nu am pus aceeasi culoare, in consola imi da eroare
+     // const COLOR_1 = "#026873"; si asa imi da eroare, pt ca am voie sa declar doar o singura data COLOR_1
+
+        var counter2;
+        console.log(counter2);
+    // daca var counter nu are valoare si pun imd dupa ea console, in consola va afisa 'undefinded'
+        counter2 = 8;
+        console.log(counter2);
+
+        var x = "*global variable*";
+        
+        {
+            var y = "*block variable*";
+        }
+        console.log(x);
+        console.log(y); //daca mutam comanda asta in block, atunci s-ar fi vazut
+    // daca as fi pus definirea let, ceea ce este in block nu ar fi functionat.
+    
+        console.log(z);
+        var z; //dar si daca puneam var z tot ar fi dat undefinded;
+        //aici de aplica termenul de hoisting, dar el ridica deasupra consolei doar definirea, si nu si initializarea.  
+    </script>
+</body>
+</html>

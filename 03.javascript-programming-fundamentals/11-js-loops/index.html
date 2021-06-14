@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Loops</title>
+</head>
+<body>
+    <script>
+        console.log("Hello World!");
+
+        for (let i = 0; i < 5; i++) {           //i=contor
+            console.log("Hello World.")
+        }
+
+        var a = 0;                      //asta e o bucla moarta
+        while (a < 5) {
+            console.log("Buna lume");
+            a++;                        //daca nu pun conditia asta, o sa fie in consola la infinit
+        }
+
+
+
+        var b = 0;                      //bucla do-while - daca conditia nu se indeplineste, va afisa un rezultat
+        do {                            
+            console.log("Buna ziua!");
+            b++;                    
+        } while (b < 5);
+
+
+
+        for(var c = 0; c < 100; c++){   //daca folosesc continue, imi va afisa de la 0-50, apoi 100 (100 pt ca am pus consola in afara buclei )
+            if(c > 50){                 //daca pun break, imi afiseaza de la 0-51
+                continue;
+            }
+            console.log(c);
+        }
+        console.log(c);
+    
+    </script>
+</body>
+</html>

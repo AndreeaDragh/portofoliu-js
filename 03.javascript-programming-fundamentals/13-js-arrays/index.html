@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to JavaScript Arrays</title>
+</head>
+<body>
+    <script>
+        // let car = "Ford";
+        // let cars = new Array("Ford", "Mazda"); se mai poate scrie si asa o serie
+
+        let cars = ["Ford", "Mazda", "Renault", "Logan", "Mercedes"];
+        cars[1] = "BMW";     //am vrut sa schimb mazda cu bemveu
+        cars[2] = "Honda";   
+        cars[6] = "Opel";       //am vrut sa adaug un element
+        cars.push("Toyota");    //adauga un element la sfarsit, ca sa elimin folosesc pop
+        cars.unshift("Acura");  //adauga un element la inceput, ca sa elimin folosesc shift    
+        cars.sort();    
+        console.log(cars[0]);
+        console.log(cars.toString());
+        console.log(cars.length);       //asta e lungimea sirului
+
+        let pos=cars.indexOf("Toyota");     //asa cauti pozitia ce o ocupa Toyota in cars
+        console.log(pos);
+        
+
+        
+        //daca pun un sir cu numere si il sortez, imi va afisa in ordine alfabetica si trebuie sa fac asa:
+        var numbers = [1,2,55,23,0,11,123,-33];
+        numbers.sort(compareNumbers);
+        console.log(numbers.toString());
+        function compareNumbers(a,b) {
+            return a - b;
+        }
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siruri</title>
+</head>
+<body>
+    <script>
+        /*let cars = ["Honda", "Toyota", "Acura"];
+        for (let i = 0; i < cars.length; i++) {
+            console.log(cars[i]);
+        } */                    //asa se imprima in consola fiecare element separat
+
+        let cars = ["Honda", "Toyota", "Acura"];
+        for(let property in cars) {
+            console.log(property);                  //pana aici afiseaza indecsii e for..in
+        }
+
+        let manyCars = ["Honda", "Toyota", "Acura"];
+        for(let car of manyCars) {
+            console.log(car);                  //e for..of
+        }
+
+        let masini = ["Opel", "Tokio", "Marea"];
+        masini.forEach(writeCar);
+        
+        function writeCar(item, index, array) {
+            console.log(index + ": " + item);
+        }
+
+
+    </script>
+</body>
+</html>

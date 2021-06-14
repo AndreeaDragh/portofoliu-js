@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D JavaScript Arrays</title>
+</head>
+<body>
+    <script>
+        let arrs = [];
+            arrs[0] = [1,2,3];
+            arrs[1] = [4,5,6];
+            arrs[2] = [7,8,9];
+            arrs[3] = [10,11,12];
+            arrs[4] = [13,14,15];
+        console.log(arrs[2][1]);
+
+        let users = [];
+
+        users[0] = [1, "john", "34392849", "john@yahoo.com"];
+        users[1] = [2, "maria", "dwf324342", "maria@yahoo.com"];
+        users[2] = [3, "ion", "dsada3423", "ion@yahoo.com"];
+        users[3] = [4, "ana", "dcw543g", "ana@yahoo.com"];
+        users[4] = [5, "lia", "432123d", "lia@yahoo.com"];
+
+    /*    for(let i = 0; i < users.length; i++){          //ca sa imi afiseze coloana cu numele
+            console.log(users[i][1]);
+        } */
+
+        for(let i = 0; i < users.length; i++) {
+            for(let j = 0; j < users.length; j++){
+                console.log(users[i][j]);
+            }
+        }
+                        
+        let arr = [[1, 2, 3], [4, 5, 6 ], [7, 8, 9], [10, 11, 12], [13, 14, 15]];
+        console.log(arr[0].toString());
+        console.log(arr[3][2]);     //ca sa afiseze 12
+    
+    </script>
+</body>
+</html>
